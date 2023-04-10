@@ -18,7 +18,7 @@ public class Main {
     public static void main(String[] args) {
 
         try {
-            // create connection
+            
             emf = Persistence.createEntityManagerFactory("BankJPA");
             em = emf.createEntityManager();
             CurrencyRates.createRates(em);
